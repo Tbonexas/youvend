@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core';
 import Product from './Product';
 
 const products = [
-    {id: 1, name: "50A Cord Reel", description: '50 Amp Cord Reel', price: '$5' },
+    {id: 1, name: "50A Cord Reel", description: '50 Amp Cord Reel', price: '$3,500' },
 ];
 
 const Products = () => {
