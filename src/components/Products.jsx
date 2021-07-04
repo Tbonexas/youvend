@@ -4,7 +4,10 @@ import Product from './Product';
 
 const products = [
     {id: 1, name: "50A Cord Reel", description: '50 Amp Cord Reel', price: '$3,500' },
+    {id: 2, name: "Cable Storage Barrel", description: '50 Amp Cord Barrel', price: '$3,500' },
+    {id: 3, name: "Unit Dolly", description: 'Dolly to move the product', price: '$3,500' },
 ];
+
 
 const Products = () => {
     return (
