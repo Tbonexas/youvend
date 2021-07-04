@@ -1,9 +1,10 @@
 import React from 'react'
+import Products from './components/Products';
 
 const App = () => {
     return (
         <div>
-            50 Amp Cord Reel
+            <Products />
         </div>
     )
 }

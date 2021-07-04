@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton  } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
-import useStyles from './styles';
+import useStyles from './Product/styles'
 
 
 const Product = ({ product }) => {
@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                         {product.price}
                     </Typography>
                </div>
-               <Typography variant="h2" color="textSecondary">{product.description}</Typography>
+               <Typography variant="h5" color="textSecondary">{product.description}</Typography>
            </CardContent>
            <CardActions disableSpacing className={classes.cardActions}>
                 <IconButton aria-label="Add to Cart">
@@ -28,5 +28,7 @@ const Product = ({ product }) => {
        </Card>
     )
 }
+
+// Fix typography sizing once cards are complete 
 
 export default Product;
