@@ -2,7 +2,6 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import Product from './Product';
 import useStyles from './Product/styles2'
-import { classes } from 'istanbul-lib-coverage';
 
 const products = [
     {id: 1, name: "50A Cord Reel", 

@@ -15,7 +15,7 @@ const Navbar= () => {
                         <img src={logo} alt='minilogo' height='25px' className={classes.image} />50 Amp Cord Reel
                     </Typography>
                 
-                <div className={classes.grow}/>
+                <div className={classes.grow} />
                 <div className={classes.button}>
                     <IconButton aria-label='Show cart items' color='inherit' >
                         <Badge badgeContent={0} color='secondary'>
