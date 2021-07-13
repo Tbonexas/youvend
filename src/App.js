@@ -11,7 +11,7 @@ const App = () => {
 
         setProducts(data);
     }
-
+// will fetch array of items sold on app //
     useEffect(() => {
         fetchProducts();
     },[]);
