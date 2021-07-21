@@ -30,6 +30,4 @@ const Product = ({ product }) => {
     )
 }
 
-// Fix typography sizing once cards are complete line 21 h2 may need need to be smaller to fit better description of product
-
 export default Product;
