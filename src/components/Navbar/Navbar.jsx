@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
-import { CallMissedSharp, ShoppingCart } from '@material-ui/icons';
+import { ShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 import logo from '../../assets/navbarlogo/navlogo.png'
 
@@ -12,7 +12,7 @@ const Navbar= () => {
             <AppBar position='fixed' className={classes.appBar} color='inherit'>
                 <Toolbar>
                     <Typography variant='h6' className={classes.title} color='inherit'>
-                        <img src={logo} alt='minilogo' height='25px' className={classes.image} />50 Amp Cord Reel
+                        <img src={logo} alt='minilogo' height='25px' className={classes.image} />Tbonexas Custom Shop
                     </Typography>
                 
                 <div className={classes.grow} />
