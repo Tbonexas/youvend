@@ -3,16 +3,28 @@ import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '
 import { ShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 import logo from '../../assets/navbarlogo/navlogo.png'
+import '../../../src/App.css'
+import { ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
 
 
 const Navbar= () => {
+    
+    const theme = createMuiTheme({
+        typography: {
+          fontFamily: [
+            'Chilanka',
+            'cursive',
+          ].join(','),
+        },});
+
     const classes = useStyles();
     return (
         <>
+            <ThemeProvider theme={theme}>
             <AppBar position='fixed' className={classes.appBar} color='inherit'>
                 <Toolbar>
                     <Typography variant='h6' className={classes.title} color='inherit'>
-                        <img src={logo} alt='minilogo' height='25px' className={classes.image} />Tbonexas Custom Shop
+                        <img src={logo} alt='minilogo' height='25px' className={classes.image} />YouVend
                     </Typography>
                 
                 <div className={classes.grow} />
@@ -25,6 +37,7 @@ const Navbar= () => {
                 </div>
                 </Toolbar>
             </AppBar>
+            </ThemeProvider>
         </>
     )
 }

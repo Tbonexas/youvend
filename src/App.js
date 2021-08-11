@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { commerce } from './lib/commerce'
-
+import '../src/App.css'
 import Products from './components/Products'
 import Navbar from './components/Navbar/Navbar'
 
