@@ -9,7 +9,8 @@ import { ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
 
 const Navbar= () => {
     
-    const theme = createMuiTheme({
+    const classes = useStyles();
+    const gfont = createMuiTheme({
         typography: {
           fontFamily: [
             'Chilanka',
@@ -17,10 +18,9 @@ const Navbar= () => {
           ].join(','),
         },});
 
-    const classes = useStyles();
     return (
         <>
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={gfont}>
             <AppBar position='fixed' className={classes.appBar} color='inherit'>
                 <Toolbar>
                     <Typography variant='h6' className={classes.title} color='inherit'>
