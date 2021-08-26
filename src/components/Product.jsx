@@ -8,6 +8,11 @@ import useStyles from './Product/styles'
 
 const Product = ({ product }) => {
     const classes = useStyles();
+    console.log(product);
+    return <div>testing</div>
+
+    // check properties of the products from commerce js //
+    
 
     return (
        <Card className={classes.root}>
