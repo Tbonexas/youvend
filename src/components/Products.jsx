@@ -3,11 +3,7 @@ import { Grid } from '@material-ui/core';
 import Product from './Product';
 import useStyles from './Product/styles2'
 
-// mock products // 
-
-
-
-
+// removed mock products to pull products through a prop from commerece js account // 
 const Products = ({ products }) => {
     const classes = useStyles();
 
