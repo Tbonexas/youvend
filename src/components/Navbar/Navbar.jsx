@@ -1,6 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography, Link } from '@material-ui/core';
-import SearchBar from 'material-ui-search-bar';
+import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 import logo from '../../assets/navbarlogo/navlogo.png'
@@ -28,16 +27,7 @@ const Navbar= () => {
                         <Typography variant='h6' className={classes.title} color='inherit'>
                                 <img src={logo} alt='minilogo' height='25px' className={classes.image} />YouVend
                         </Typography>
-                    </Link>
                 <div className={classes.grow} />
-                <SearchBar
-                                         onChange={() => console.log('onChange')}
-                                         onRequestSearch={() => console.log('onRequestSearch')}
-                                         style={{
-                                           margin: '0 auto',
-                                           maxWidth: 800
-                                         }}
-                                    />
                 <div className={classes.button}>
                     <IconButton aria-label='Show cart items' color='inherit' >
                         <Badge badgeContent={2} color='secondary'>
