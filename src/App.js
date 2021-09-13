@@ -3,10 +3,8 @@ import { commerce } from './lib/commerce'
 import '../src/App.css'
 import Products from './components/Products'
 import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Footer/Footer'
 
 const App = () => {
-    
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState({});
 
@@ -38,7 +36,6 @@ const App = () => {
         <div>
             <Navbar />
             <Products products={products} onAddToCart={handleAddToCart} />
-            <Footer />
         </div>
     )
 }
