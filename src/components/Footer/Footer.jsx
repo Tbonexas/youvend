@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Grid, Box, Link } from '@material-ui/core';
 import SearchBar from 'material-ui-search-bar';
-import { ShoppingCart } from '@material-ui/icons';
-import useStyles from './styles';
 import logo from '../../assets/navbarlogo/navlogo.png'
 import EnvelopeOpenText from '../../assets/images/envelope-open-text-solid.svg';
 import GithubSquare from '../../assets/images/github-square-brands.svg';
 import Instagram from '../../assets/images/instagram-brands.svg';
 import Linkedin from '../../assets/images/linkedin-brands.svg';
 import Twitter from '../../assets/images/twitter-brands.svg';
+
+
 
 import '../../../src/App.css'
 import { ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
@@ -63,7 +63,7 @@ const Footer= () => {
                                 </Box>
                                 <Box>
                                     <Link href="/order" color="inherit">
-                                        Order
+                                        Orders
                                     </Link>
                                 </Box>
                                 <Box>
