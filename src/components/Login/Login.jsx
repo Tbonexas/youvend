@@ -1,8 +1,9 @@
 import { useState, useContext, useRef, useEffect } from "react";
 import AuthService from "../../Services/AuthService";
 import { AuthContext } from "../../Context/AuthContext";
-import { Container } from "react-bootstrap";
+import { Container, Form, Col, Row, Button } from "react-bootstrap";
 import Message from '../Message/Message';
+import './style.css';
 
 
 
@@ -70,44 +71,50 @@ const Login = (props) => {
 
     return (
         <>
-        <Container>
-            <form className="mt-5" onSubmit={handleSubmit}>
-                <h1 className="text-center my-4 pb-5 font-light larger-spacing squeezed yellow-underline">SIGN IN</h1>
-                <div className="form-group">
-                    <input 
-                        type="text" 
-                        name="username" 
-                        onChange={handleChange} 
-                        className="form-control form-control-lg form-xl purple-border" 
-                        placeholder="Username" 
-                        aria-label="Enter Username" 
-                        disabled={disabled} 
-                        required
-                    />
-                </div>
-                <div className="form-group">
-                    <input 
-                        type="password" 
-                        name="password" 
-                        onChange={handleChange} 
-                        className="form-control form-control-lg form-xl purple-border" 
-                        placeholder="Password" 
-                        aria-label="Enter Password" 
-                        disabled={disabled} 
-                        required
-                    />
-                </div>
-                <button className="btn btn-lg btn-primary btn-block button-xl py-3" type="submit" disabled={disabled}>
-                    LOG IN <i className="fad fa-sign-in-alt ml-1"></i>
-                </button>
-            </form>
-            <form className="mt-2 mb-5" onSubmit={handleRegisterRedirect}>
-                <button className="btn btn-lg btn-info btn-block button-xl py-3" type="submit" disabled={disabled}>
-                    Register Account
-                </button>
-            </form>
-            {message ? <Message message={message}/> : null}
-        </Container>
+            <Container className='loginContainer'>
+                <Form className="mt-5login" onSubmit={handleSubmit}>
+                    <h1 className="login.h1"style={{color:'rgba(245, 181, 27)'}}>SIGN IN</h1>
+                    <Form.Row>
+                        <Form.Group as={Col} controlId='usernameLoginFormGroup'>
+                            <Form.Label name='username'></Form.Label>
+                            <Form.Control
+                                type="text"
+                                onChange={handleChange}
+                                className="form-control"
+                                placeholder="Username"
+                                aria-label="Enter Username"
+                                disabled={disabled}
+                                required
+                            />
+                        </Form.Group>
+                        <Form.Group as={Col} controlId='passwordLoginFormGroup'>
+                            <Form.Label name='password'></Form.Label>
+                            <Form.Control
+                                type="password"
+                                onChange={handleChange}
+                                className="form-control"
+                                placeholder="Password"
+                                aria-label="Enter Password"
+                                disabled={disabled}
+                                required
+                            />
+                        </Form.Group>
+                        <br>
+                        </br>
+                        <Button className="loginButton1" type="submit" disabled={disabled}>
+                            LOG IN <i className="fad fa-sign-in-alt ml-1"></i>
+                        </Button>
+                    </Form.Row>
+                </Form>
+                <br>
+                </br>
+                <Form className="mt-2 mb-5" onSubmit={handleRegisterRedirect}>
+                    <Button className="loginButton2" type="submit" disabled={disabled}>
+                        Register Account
+                    </Button>
+                </Form>
+                {message ? <Message message={message} /> : null}
+            </Container>
         </>
     );
 };

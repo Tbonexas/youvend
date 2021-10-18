@@ -1,0 +1,11 @@
+div.registerContainer.container{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    border: solid rgba(245, 181, 27);
+    background-color: rgba(117,117,117);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
