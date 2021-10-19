@@ -1,6 +1,6 @@
 div.registerContainer.container{
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     padding: 20px;
     text-align: center;
     border: solid rgba(245, 181, 27);
@@ -8,4 +8,5 @@ div.registerContainer.container{
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    height: 270px;
 }

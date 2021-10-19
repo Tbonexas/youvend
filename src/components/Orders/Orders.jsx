@@ -5,12 +5,11 @@ import './style.css'
 function Orders() {
 
   return (
-    <Container fluid className="orders-section">
+    <Container fluid className="orders-container">
       <Row className='orders-Title'>
         <Col
         md={7}
         style={{
-          
           paddingTop: "10px"
         }} 
         >

@@ -1,4 +1,16 @@
 img.img-fluid{
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
+}
+div.about-container.container-fluid{
+    margin-top: 95px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: solid rgba(245, 181, 27);
+    background-color: darkslategray;
+    width: 800px;
+    height: 300px;
 }
