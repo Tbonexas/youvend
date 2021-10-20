@@ -4,7 +4,7 @@ import { AuthContext } from "../../Context/AuthContext";
 import { Container, Form, Col, Row, Button } from "react-bootstrap";
 import Message from '../Message/Message';
 import './style.css';
-
+import logo from '../../assets/navbarlogo/navlogo.png'
 
 
 const Login = (props) => {
@@ -114,6 +114,9 @@ const Login = (props) => {
                     </Button>
                 </Form>
                 {message ? <Message message={message} /> : null}
+                <br>
+                </br>
+                <img src={logo} alt='minilogo' height='40px'/>
             </Container>
         </>
     );

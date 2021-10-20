@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import AuthService from "../../Services/AuthService";
 import { Container, Form, Col, Row, Button } from "react-bootstrap";
 import "./style.css";
-
+import logo from '../../assets/navbarlogo/navlogo.png'
 //Import Components
 import Message from "../Message/Message";
 
@@ -124,6 +124,8 @@ const Register = (props) => {
                     </Button>
                 </Form>
                 {message ? <Message message={message} /> : null}
+                
+                <img src={logo} alt='minilogo' height='40px'/>
             </Container>
         </>
     );
