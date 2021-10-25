@@ -18,7 +18,7 @@ function Account() {
       <Row style={{ justifyContent: 'center'}}>
         <Col md={4} className="account-card">
           <AccountCard 
-            ImgPath={idCard}
+            img={idCard}
             title='Profile'
             description='Personalized your Profile Info'
             path='/profile'
@@ -26,7 +26,7 @@ function Account() {
         </Col>
         <Col md={4} className="account-card">
         <AccountCard 
-            ImgPath={cubes}
+            img={cubes}
             title='Orders'
             description='Track your Orders'
             path='/orders'
@@ -34,7 +34,7 @@ function Account() {
         </Col>
         <Col md={4} className="account-card">
         <AccountCard 
-            ImgPath={mailBulk}
+            img={mailBulk}
             title='Messages'
             description='View your Messages'
             path='/messages'
@@ -42,7 +42,7 @@ function Account() {
         </Col>
         <Col md={4} className="account-card">
         <AccountCard 
-            ImgPath={shieldAlt}
+            img={shieldAlt}
             title='Security'
             description='Account Security Settings'
             path='/security'
