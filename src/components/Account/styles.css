@@ -44,3 +44,13 @@ div.account-card.col-md-4{
 div.row{
     display: inline-flex;
 }
+img.card-img-top{
+    height: 50px;
+    width: 50px;
+}
+button.btn.btn-primary{
+    margin-bottom: 7px;
+}
+div.card-title.h5{
+    color: rgba(245, 181, 27);
+}

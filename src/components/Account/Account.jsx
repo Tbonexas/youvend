@@ -1,10 +1,10 @@
 import React from "react";
 import './styles.css';
 import UserCircle from '../../assets/images/user-circle-solid.svg';
-import IdCard from '../../assets/images/id-card-solid.svg';
-import Cubes from '../../assets/images/cubes-solid.svg';
-import MailBulk from '../../assets/images/mail-bulk-solid.svg';
-import ShieldAlt from '../../assets/images/shield-alt-solid.svg';
+import idCard from '../../assets/images/id-card-solid.svg';
+import cubes from '../../assets/images/cubes-solid.svg';
+import mailBulk from '../../assets/images/mail-bulk-solid.svg';
+import shieldAlt from '../../assets/images/shield-alt-solid.svg';
 import { Container, Row, Col } from 'react-bootstrap';
 import AccountCard from './AccountCards';
 function Account() {
@@ -15,10 +15,10 @@ function Account() {
         <h1 style={{fontSize: '2.1em', color:'rgba(245, 181, 27)'}}>
           Account <img className='userAccount' src={UserCircle} alt='userCircle' />
         </h1>
-      <Row style={{ justifyContent: 'center,'}}>
+      <Row style={{ justifyContent: 'center'}}>
         <Col md={4} className="account-card">
           <AccountCard 
-            ImgPath={IdCard}
+            ImgPath={idCard}
             title='Profile'
             description='Personalized your Profile Info'
             path='/profile'
@@ -26,7 +26,7 @@ function Account() {
         </Col>
         <Col md={4} className="account-card">
         <AccountCard 
-            ImgPath={Cubes}
+            ImgPath={cubes}
             title='Orders'
             description='Track your Orders'
             path='/orders'
@@ -34,7 +34,7 @@ function Account() {
         </Col>
         <Col md={4} className="account-card">
         <AccountCard 
-            ImgPath={MailBulk}
+            ImgPath={mailBulk}
             title='Messages'
             description='View your Messages'
             path='/messages'
@@ -42,7 +42,7 @@ function Account() {
         </Col>
         <Col md={4} className="account-card">
         <AccountCard 
-            ImgPath={ShieldAlt}
+            ImgPath={shieldAlt}
             title='Security'
             description='Account Security Settings'
             path='/security'
