@@ -62,7 +62,7 @@ const Register = (props) => {
         <>
             <Container className='registerContainer'>
                 <Form className="mt-5register" onSubmit={handleSubmit}>
-                    <h1 className="register.h1" style={{color:'rgba(245, 181, 27)'}}>REGISTER</h1>
+                    <h1 className="register.h1" style={{ color: 'rgba(245, 181, 27)' }}>REGISTER</h1>
                     <Form.Row>
                         <Form.Group as={Col} controlId='emailFormGroup'>
                             <Form.Label name='email'></Form.Label>
@@ -116,15 +116,15 @@ const Register = (props) => {
                         </Button>
                     </Form.Row>
                 </Form>
-                
+
                 <Form className="mt-2 mb-5" onSubmit={handleLogInredirect}>
                     <Button className="registerButton2" type="submit" disabled={disabled}>
                         Log Into Existing Account
                     </Button>
                 </Form>
                 {message ? <Message message={message} /> : null}
-                
-                <img src={logo} alt='minilogo' height='40px'/>
+
+                <img src={logo} alt='minilogo' height='40px' />
             </Container>
         </>
     );

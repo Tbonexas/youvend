@@ -5,18 +5,10 @@ function CustomerService() {
 
   return (
     <Container fluid className="customerService-container">
-      <Row >
-        <Col
-        md={7}
-        style={{
-          paddingTop: "10px"
-        }} 
-        >
+      <Container>
         <h1 style={{fontSize: '2.1em', color:'rgba(245, 181, 27)'}}>
           Customer Service
         </h1>
-      </Col>
-      </Row>
       <Row className='customerService-description'>
         <Col style={{color:'white'}}>
         <h3>
@@ -24,6 +16,7 @@ function CustomerService() {
         </h3>
         </Col>
       </Row>
+      </Container>
     </Container>
   );
 }

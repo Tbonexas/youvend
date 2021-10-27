@@ -15,3 +15,6 @@ div.about-container.container-fluid{
     width: 70%;
     height: 300px;
 }
+div.about-description.row{
+    display: block;
+}
