@@ -116,8 +116,7 @@ const Register = (props) => {
                         </Button>
                     </Form.Row>
                 </Form>
-                <br>
-                </br>
+                
                 <Form className="mt-2 mb-5" onSubmit={handleLogInredirect}>
                     <Button className="registerButton2" type="submit" disabled={disabled}>
                         Log Into Existing Account
