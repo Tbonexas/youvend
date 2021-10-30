@@ -2,3 +2,61 @@ img.userAccount{
     width: 25px;
     height: 25px;
 }
+div.account-container.container-fluid{
+    margin-top: 78px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: solid rgba(245, 181, 27);
+    background-color: darkslategray;
+    width: 90%;
+    border-radius: 2% 2%;
+    background-image: var(--section-background-color) !important;
+}
+.account-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: auto !important;
+}
+  
+.account-card-view {
+    box-shadow: 0 4px 5px 3px rgba(30, 130, 29, 0.459) !important;
+    color:#cdd1d5 !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+}
+.project-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(40, 149, 37, 0.561) !important;
+}
+p.card-text{
+    text-align: center !important;
+}
+div.account-card.col-md-4{
+    height: 420px;
+    width: 360px;
+}
+div.row{
+    display: inline-flex;
+}
+img.card-img-top{
+    height: 50px;
+    width: 50px;
+}
+button.btn.btn-primary{
+    margin-bottom: 7px;
+}
+div.card-title.h5{
+    color: rgba(245, 181, 27);
+}
+div.MuiBox-root.MuiBox-root-17{
+    padding: 61px;
+    margin-top: 38px;
+}

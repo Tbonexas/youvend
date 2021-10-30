@@ -11,26 +11,27 @@ import Twitter from '../../assets/images/twitter-brands.svg';
 
 
 import '../../../src/App.css'
-import { ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 
-const Footer= () => {
+const Footer = () => {
 
     // const classes = useStyles();
     const gfont = createMuiTheme({
         typography: {
-          fontFamily: [
-            'Chilanka',
-            'cursive',
-          ].join(','),
-        },});
-    return ( 
+            fontFamily: [
+                'Chilanka',
+                'cursive',
+            ].join(','),
+        },
+    });
+    return (
         <>
             <footer>
-                <Box 
-                    px={{ xs: 3, sm: 10}} 
-                    py={{ xs: 5, sm: 10}}
-                    bgcolor="text.secondary" 
+                <Box
+                    px={{ xs: 3, sm: 10 }}
+                    py={{ xs: 5, sm: 10 }}
+                    bgcolor="text.secondary"
                     color="white">
                     <Container maxWidth='lg'>
                         <Grid container spacing={5}>
@@ -141,23 +142,23 @@ const Footer= () => {
                                 </br>
                                 <Box>
                                     <SearchBar
-                                         onChange={() => console.log('onChange')}
-                                         onRequestSearch={() => console.log('onRequestSearch')}
-                                         style={{
-                                           margin: '0 auto',
-                                           maxWidth: 800
-                                         }}
+                                        onChange={() => console.log('onChange')}
+                                        onRequestSearch={() => console.log('onRequestSearch')}
+                                        style={{
+                                            margin: '0 auto',
+                                            maxWidth: 800
+                                        }}
                                     />
                                     <br>
                                     </br>
-                                        <Link href='/'>
+                                    <Link href='/'>
                                         <img className='bottomRightLogo' src={logo} alt='minilogo' height='90px' width='90' />
-                                        </Link>
+                                    </Link>
                                 </Box>
                             </Grid>
                         </Grid>
-                        <Box textAlign="center" pt={{xs: 5, sm: 10}} pb={{xs:5, sm:0}}>
-                            YouVend <img src={logo} alt='minilogo' height='12px'/> &copy; {new Date().getFullYear()} TBONEXAS-AEG CODES Production. All Rights Reserved.&reg;
+                        <Box textAlign="center" pt={{ xs: 5, sm: 10 }} pb={{ xs: 5, sm: 0 }}>
+                            YouVend <img src={logo} alt='minilogo' height='12px' /> &copy; {new Date().getFullYear()} TBONEXAS-AEG CODES Production. All Rights Reserved.&reg;
                         </Box>
                     </Container>
                 </Box>
